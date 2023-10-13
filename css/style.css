@@ -47,7 +47,15 @@ header:hover, button:hover {
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
 }
+/* Error and Success Styles */
+.error {
+  border: 2px solid red;
+}
+.success {
+  border: 2px solid green;
+}
 
+ 
 
 
 
