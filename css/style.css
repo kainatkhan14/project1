@@ -55,6 +55,16 @@ header:hover, button:hover {
   border: 2px solid green;
 }
 /* Media Queries */
+/* First Media Query - Tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1em;
+  }
+  .form-group {
+    width: 70%;
+  }
+}
+
 
 
   
