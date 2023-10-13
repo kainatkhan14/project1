@@ -64,7 +64,15 @@ header:hover, button:hover {
     width: 70%;
   }
 }
-
+/* Second Media Query - Desktop */
+@media (min-width: 992px) {
+  body {
+    font-size: 1.2em;
+  }
+  .form-group {
+    width: 50%;
+  }
+}  
 
 
   
