@@ -9,5 +9,11 @@ body {
 h1 {
   font-family: 'Open Sans', sans-serif;
 }
+/* Color Scheme */
+:root {
+  --primary-color: #50b3a2;
+  --secondary-color: #333;
+  --background-color: #f4f4f4;
+}
   
  
