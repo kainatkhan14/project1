@@ -23,7 +23,13 @@ header {
   background: var(--primary-color);
   color: white;
 }
- 
+/* Material Design */
+header, button {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+  
+  
  
   
  
