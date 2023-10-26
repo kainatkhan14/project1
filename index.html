@@ -11,27 +11,41 @@
   <script src="script/script.js"></script>
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Join Our Newsletter</h1>
+    <p>Fill in the form below and Unlock exclusive benefits today!</p>
   </header>
+  <section id="why-join" class="info-section">
+    <h2>Why Join?</h2>
+    <p>Be the first to get exclusive offers and the latest news on our products and services directly in your inbox.</p>
+  </section>
+  <section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <address>
+      Got a question? <br>
+      Email us at: <a href="mailto:support@example.com">support@example.com</a>
+    </address>
+    <p>We're here to assist you 24/7!</p>
+  </section>
   <main>
     <form id="signup-form">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="interest">Interest:</label>
-      <select id="interest" name="interest">
-        <option value="tech">Tech</option>
-        <option value="lifestyle">Lifestyle</option>
-      </select>
-    </div>
-    <button type="submit" id="submit-btn">Sign Up</button>
+      <p>Fill in the form below and Unlock exclusive benefits today!</p>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="interest">Interest:</label>
+        <select id="interest" name="interest">
+          <option value="tech">Tech</option>
+          <option value="lifestyle">Lifestyle</option>
+        </select>
+      </div>
+      <button type="submit" id="submit-btn">Sign Up</button>
     </form>
   </main>
 </body>
