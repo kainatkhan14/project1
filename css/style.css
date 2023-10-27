@@ -5,10 +5,11 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   line-height: 1.6;
-}
+}  
 h1 {
   font-family: 'Open Sans', sans-serif;
 }
+
 /* Color Scheme */
 :root {
   --primary-color: #50b3a2;
@@ -23,6 +24,7 @@ header {
   background: var(--primary-color);
   color: white;
 }
+
 /* Material Design */
 header, button {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
@@ -31,6 +33,73 @@ header, button {
 header:hover, button:hover {
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
+
+/* why-join and contact sections */
+#why-join, #contact {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+.site-header {
+  text-align: center;
+  padding: 1em;
+  background-image: linear-gradient(to bottom right, var(--primary-color), #009688);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.site-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+.site-header p {
+  font-size: 1.2em;
+  margin-top: 0;
+  color: #f2f2f2;
+}
+
+/* Info Sections */
+.info-section {
+  text-align: center;
+  padding: 1.5em;
+  margin: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+.info-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: var(--primary-color);
+}
+.info-section p {
+  font-size: 1.1em;
+}
+.info-section address {
+  font-size: 1.1em;
+}
+#contact p {
+  color: var(--secondary-color);
+}
+
+/* Background Image */
+body {
+  background-image: url('../images/your-background-image.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Container for form */
+main {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 2em;
+  margin: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Form Styles */
 .form-group {
   width: 100%;
@@ -47,32 +116,39 @@ header:hover, button:hover {
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
 }
+
 /* Error and Success Styles */
 .error {
   border: 2px solid red;
 }
+
 .success {
   border: 2px solid green;
 }
+
 /* Media Queries */
+
 /* First Media Query - Tablet */
 @media (min-width: 768px) {
   body {
     font-size: 1.1em;
   }
+
   .form-group {
     width: 70%;
   }
 }
+
 /* Second Media Query - Desktop */
 @media (min-width: 992px) {
   body {
     font-size: 1.2em;
   }
+
   .form-group {
     width: 50%;
   }
-}  
+}
 
 
   
