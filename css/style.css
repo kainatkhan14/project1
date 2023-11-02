@@ -2,14 +2,14 @@
 
 /* Typography */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.6;
-}  
+}
 h1 {
   font-family: 'Open Sans', sans-serif;
 }
-
+  
 /* Color Scheme */
 :root {
   --primary-color: #50b3a2;
@@ -24,7 +24,6 @@ header {
   background: var(--primary-color);
   color: white;
 }
-
 /* Material Design */
 header, button {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
@@ -42,6 +41,7 @@ header:hover, button:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 1em;
 }
+
 .site-header {
   text-align: center;
   padding: 1em;
@@ -49,10 +49,12 @@ header:hover, button:hover {
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
 }
+
 .site-header h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
 }
+
 .site-header p {
   font-size: 1.2em;
   margin-top: 0;
@@ -69,17 +71,21 @@ header:hover, button:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
 }
+
 .info-section h2 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
   color: var(--primary-color);
 }
+
 .info-section p {
   font-size: 1.1em;
 }
+
 .info-section address {
   font-size: 1.1em;
 }
+
 #contact p {
   color: var(--secondary-color);
 }
@@ -93,6 +99,9 @@ body {
 
 /* Container for form */
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   padding: 2em;
@@ -100,21 +109,24 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Styles */
+  
+  /* Form Styles */
 .form-group {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
+
 .form-group label {
   font-weight: 500;
   margin-bottom: 8px;
 }
+
 .form-group input, .form-group select {
   padding: 10px;
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
+  width: 85vh;
 }
 
 /* Error and Success Styles */
@@ -130,13 +142,30 @@ main {
 
 /* First Media Query - Tablet */
 @media (min-width: 768px) {
-  body {
-    font-size: 1.1em;
+  .form-group {
+    width: 80vh;
+    margin-bottom: .9rem;
   }
 
-  .form-group {
-    width: 70%;
+  body {
+    font-size: 1.1em;
+    background-color: #e6e6e6; 
   }
+
+  main {
+    border: 1px solid #ccc; 
+  }
+
+  
+  .form-group label {
+    font-weight: 480;
+    margin-bottom: 7px;
+  }
+  
+  .form-group input, .form-group select {
+    padding: 9px;
+  }
+
 }
 
 /* Second Media Query - Desktop */
@@ -145,10 +174,30 @@ main {
     font-size: 1.2em;
   }
 
+  body {
+    font-size: 1.2em;
+    line-height: 1.8; 
+  }
+
+  main {
+    border: 2px solid #bbb; 
+  }
   .form-group {
-    width: 50%;
+    margin-bottom: .85rem;
+    width: 77vh;
+  }
+  
+  .form-group label {
+    font-weight: 460;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input, .form-group select {
+    padding: 8px;
   }
 }
+
+
 
 
   
